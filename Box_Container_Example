@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Two Content Boxes</title>
+
+    <style>
+        body {
+            font-family: "Open Sans", Arial, sans-serif;
+            background-color: #F7F6F9;
+            padding: 30px;
+        }
+
+        /* Container for side-by-side layout */
+        .box-container {
+            display: flex;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual content box */
+        .content-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            flex: 1;
+            padding: 20px 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Header */
+        .content-box h2 {
+            color: #4f3674;
+            /* BU Purple */
+            margin: 0;
+        }
+
+        /* Divider bar under header */
+        .header-divider {
+            height: 3px;
+            width: 100%;
+            background-color: #4f3674;
+            border-radius: 2px;
+            margin: 8px 0 16px 0;
+        }
+
+        /* Body text */
+        .content-box p {
+            color: #000000;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        /* Mobile friendly */
+        @media (max-width: 800px) {
+            .box-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box-container">
+
+        <!-- Box 1 -->
+        <div class="content-box">
+            <h2>Relevant Learning Objects</h2>
+
+            <div class="header-divider"></div>
+            <ul>
+                <li><strong>LO1:</strong> Understand foundational terminology and categories of artificial intelligence.
+                </li>
+                <li><strong>LO2:</strong> Explain how AI systems gather information, represent it internally, and take
+                    actions within the sense-think-act model.</li>
+                <li><strong>LO3:</strong> Demonstrate basic Python skills required for AI programming, including
+                    functions, lists, dictionaries, and testing with a provided harness.</li>
+
+            </ul>
+
+        </div>
+
+
+
+
+        <!-- Box 2 -->
+        <div class="content-box">
+            <h2>Required Tasks</h2>
+            <div class="header-divider"></div>
+            <ul>
+                <li>Introduce Yourself.</li>
+                <li>Review the Required Reading.</li>
+                <li>Submit Discussion Board Post.</li>
+                <li>Submit Discussion Board Reply.</li>
+                <li>Download Required Module Resources/Tools.</li>
+                <li>Submit Programming Assignment.</li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
